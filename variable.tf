@@ -72,3 +72,10 @@ variable "multi_az_deployment" {
   description   = "create a standby db instance"
   type          = bool
 }
+
+# application load balancer variables
+variable "ssl_certificate_arn" {
+  default       = "arn:aws:acm:us-east-1:033411282107:certificate/40d7fc74-8851-4269-a5d6-ca1bac2045ff"
+  description   = "ssl certificate arn"
+  type          = string
+}
